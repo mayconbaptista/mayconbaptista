@@ -1,0 +1,11 @@
+Bairro# 1:
+10-15
+Consumo medio: 15.60 m3.
+
+Bairro# 2:
+10-17
+Consumo medio: 17.90 m3.
+
+Bairro# 3:
+10-18
+Consumo medio: 18.80 m3.
