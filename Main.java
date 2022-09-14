@@ -1,37 +1,44 @@
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
+
 public class Main {
+	
+	
+	public static void main (String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		int casos, num2;
+        double soma_p, soma_c;  
+		
+		while(true) {
+			
+			casos = in.nextInt();
+			
+			if(casos == 0)  return;
 
-    public static void main(String[] args) {
+            soma_c = soma_p = 0;
 
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("================================");
-
-            for(int i=0;i<3;i++)
-            {
-                String s1 = sc.next();
-
-                int x=sc.nextInt();
+            List<Pair<Int, Int>> lista = new ArrayList<>();
+            Pair <Int, Int> par = new Pair<> ();
                 
-                for(int j = 0; j < (15 - s1.length()); j++)
-                {
-                    s1.concat(" ");
-                }
-                System.out.println(s1);
+            };
+			
+			for(int i = 0; i < casos; i++) {
+				
+                par.setkey(in.nextInt());
+                par.setValue(par.getKey() / in.nextInt());
 
-                String num = Integer.toString(x);
-                
-                for(int j = 0; j < (3 - num.length()); j++){
-                    num = "0" + num;
-                }
-
-                System.out.println(num);
-            }
-            System.out.println("================================");
-
-    }
+                soma_p +=(double) par.getKey;
+                soma_c +=(double) par.getKey;
+			}
+		}
+		
+		in.close();
+	}
 }
-
-
-
